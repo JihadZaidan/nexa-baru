@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="max-w-full w-full lg:px-20 lg:py-20 sm:px-5 sm:pt-14 sm:pb-6 flex flex-col gap-30 bg-black">
             <div className="w-full gap-18 flex lg:flex-row sm:flex-col">
                 <h1 className="w-[70%] leading-[130%] text-7xl text-white font-sans font-normal">
-                    Let's Make Something Cool
+                    Let&apos;s Make Something Cool
                 </h1>
                 <ul className="w-full flex flex-col gap-4 justify-right items-right">
                     {navigation
