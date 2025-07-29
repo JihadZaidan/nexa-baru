@@ -24,7 +24,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex flex-row gap-5 justify-center items-center">
                     <Button className="flex flex-row justify-center gap-2">
-                        <p className="text-black text-lg font-medium">Let’s talk</p>
+                        <p className="text-black text-lg font-medium">Let&apos;s talk</p>
                         <ArrowRight height={18} width={18} className="mt-[5px] text-black" />
                     </Button>
                     <div className="border-1 border-black height-[3px]"></div>
