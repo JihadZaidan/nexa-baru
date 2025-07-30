@@ -1,5 +1,11 @@
 import { Button } from "../ui/button"
 import { ArrowRight } from "lucide-react"
+import Image from "next/image"
+import DigitalStrategy from "../../../public/landing-photos/digital-strategy.png"
+import Branding from "../../../public/landing-photos/branding.png"
+import Webdev from "../../../public/landing-photos/webdevelopers.png"
+import Appdev from "../../../public/landing-photos/appdeveloper.png"
+
 
 export default function VisionBrand() {
     return (
