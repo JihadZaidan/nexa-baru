@@ -6,7 +6,7 @@ import contribute from "../../../public/landing-photos/contributors.png"
 
 export default function Introduce() {
     return (
-        <div className="max-w-full w-full gap-16 px-20 pt-18 bg-white">
+        <div className="max-w-full w-full gap-16 px-20 pt-24 lg:pb-0 pb-10 bg-white">
             <div className="w-full flex flex-col justify-between items-left gap-20">
                 <div className="w-full flex flex-col justify-left items-left gap-16">
                     <h1 className="text-5xl leading-[130%] w-[75%] font-normal font-sans text-black">
@@ -29,13 +29,13 @@ export default function Introduce() {
                             alt="photos"
                             className="lg:ml-0 ml-15"
                         />
-                        <p className="lg:text-xl text-lg font-medium text-black ">You&apos;ll collaborate with our experts.</p>
+                        <p className="lg:text-xl text-lg font-medium text-black leading-[120%]">You&apos;ll collaborate with our experts.</p>
                     </div>
 
                     <Image
                         src={contribute}
                         alt="contributors clients"
-                        className="relative lg:w-[50%] w-full lg:left-20"
+                        className="relative lg:w-[50%] w-full lg:left-20 lg:block hidden"
                     />
                 </div>
             </div>
