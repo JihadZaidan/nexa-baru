@@ -32,7 +32,41 @@ export default function VisionBrand() {
                         </div>
                     </div>
 
-                    <div></div>
+                    <div className="w-full flex flex-col justify-left items-left gap-18">
+                        <div className="w-full flex lg:flex-row flex-col gap-7">
+                            <div className="w-full flex flex-col justify-left items-left gap-5">
+                                <h4 className="font-normal text-3xl text-white">01/ DIGITAL STRATEGY</h4>
+                                <Image
+                                    src={DigitalStrategy}
+                                    alt="digital strategy"
+                                />
+                            </div>
+                            <div className="w-full flex flex-col justify-left items-left gap-5">
+                                <h4 className="font-normal text-3xl text-white">02/ BRANDING</h4>
+                                <Image
+                                    src={Branding}
+                                    alt="Branding"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="w-full flex lg:flex-row flex-col gap-7">
+                            <div className="w-full flex flex-col justify-left items-left gap-5">
+                                <h4 className="font-normal text-3xl text-white">03/ WEB DEVELOPMENT</h4>
+                                <Image
+                                    src={Webdev}
+                                    alt="WebDev"
+                                />
+                            </div>
+                            <div className="w-full flex flex-col justify-left items-left gap-5">
+                                <h4 className="font-normal text-3xl text-white">04/ APP DEVELOPMENT</h4>
+                                <Image
+                                    src={Appdev}
+                                    alt="MobileDev"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
