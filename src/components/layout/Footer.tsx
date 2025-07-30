@@ -5,8 +5,8 @@ import { ArrowUpIcon } from "lucide-react";
 export default function Footer() {
     return (
         <div className="max-w-full w-full lg:px-20 lg:py-20 sm:px-5 sm:pt-14 sm:pb-6 flex flex-col gap-30 bg-black">
-            <div className="w-full gap-18 flex lg:flex-row sm:flex-col">
-                <h1 className="lg:w-[70%] w-[90%] leading-[130%] text-7xl text-white lg:text-left  font-sans font-normal">
+            <div className="w-full gap-18 flex lg:flex-row sm:flex-col px-5">
+                <h1 className="w-[70%] leading-[130%] lg:text-7xl text-5xl text-white lg:text-left  font-sans font-normal">
                     Let&apos;s Make Something Cool
                 </h1>
                 <ul className="w-full flex flex-col gap-7 justify-right items-right">
