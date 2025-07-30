@@ -17,7 +17,7 @@ export default function Introduce() {
                     </h1>
                     <div className="justify-left">
                         <Button className="justify-center gap-[9px] ml-[-10px] border-b-2 border-black">
-                            <p className="text-black text-2xl font-medium">Let’s talk</p>
+                            <p className="text-black text-2xl font-medium">Let&apos;s talk</p>
                             <ArrowRight height={22} width={22} className="mt-[2px] text-black" />
                         </Button>
                     </div>
@@ -29,7 +29,7 @@ export default function Introduce() {
                             alt="photos"
                             className="lg:ml-0 ml-15"
                         />
-                        <p className="lg:text-xl text-lg font-medium text-black ">You'll collaborate with our experts.</p>
+                        <p className="lg:text-xl text-lg font-medium text-black ">You&apos;ll collaborate with our experts.</p>
                     </div>
 
                     <Image
