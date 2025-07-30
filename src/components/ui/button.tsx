@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        trans: "bg-transparent text-base flex flex-row"
+        trans: "bg-transparent flex flex-row cursor-pointer"
       },
       size: {
         default: "h-9 px-5 py-5",
