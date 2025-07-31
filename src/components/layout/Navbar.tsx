@@ -24,10 +24,10 @@ export default function Navbar() {
                 </div>
                 <div className="flex flex-row gap-5 justify-center items-center">
                     <Button className="flex flex-row justify-center gap-2">
-                        <p className="text-black text-lg font-medium">Let&apos;s talk</p>
-                        <ArrowRight height={18} width={18} className="mt-[5px] text-black" />
+                        <p className="text-black text-lg font-medium lg:block hidden">Let&apos;s talk</p>
+                        <ArrowRight height={18} width={18} className="mt-[5px] text-black lg:block hidden" />
                     </Button>
-                    <div className="border-1 border-black height-[3px]"></div>
+                    <div className="border-1 border-black height-[3px] lg:block hidden"></div>
                     <div className="flex flex-row gap-5">
                         <button
                             className="text-black hover:text-black p-2 rounded-lg cursor-pointer"
