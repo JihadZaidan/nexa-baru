@@ -1,6 +1,7 @@
 interface NavigationProps {
     url: string;
     label: string;
+    hideInNavbar?: boolean;
     published?: boolean;
 }
 
@@ -8,6 +9,7 @@ export const navigation: NavigationProps[] = [
     {
         url: "/",
         label: "Home",
+        hideInNavbar: false,
         published: true,
     },
     {
@@ -32,3 +34,4 @@ export const navigation: NavigationProps[] = [
     }
 
 ]
+
