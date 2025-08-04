@@ -9,8 +9,8 @@ export const navigation: NavigationProps[] = [
     {
         url: "/",
         label: "Home",
-        hideInNavbar: true,
-        published: false,
+        hideInNavbar: false,
+        published: true,
     },
     {
         url: "/works",
@@ -32,4 +32,6 @@ export const navigation: NavigationProps[] = [
         label: "Insight",
         published: true,
     }
+
 ]
+

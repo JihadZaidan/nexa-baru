@@ -95,7 +95,7 @@ export default function Worksheet() {
 
                         <div className="lg:w-[55%] w-full">
                             <Image
-                                src={work1}
+                                src={work3}
                                 alt="worker first photos"
                             />
                         </div>
@@ -106,3 +106,4 @@ export default function Worksheet() {
         </div>
     )
 }
+
