@@ -31,6 +31,7 @@ export default function AboutExplor() {
                 <Image
                     src={Discusion}
                     alt="discusion teams"
+                    className="grayscale"
                 />
             </div>
         </div>
