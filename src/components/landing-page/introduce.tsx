@@ -21,9 +21,9 @@ export default function Introduce() {
             <div className="w-full flex flex-col justify-between items-left gap-20">
                 <div className="w-full flex flex-col justify-left items-left gap-16">
                     <h1 ref={headRef} className="text-5xl leading-[130%] w-[75%] font-normal font-sans text-black">
-                        An digital agency focused on digital
-                        experiences. With every single one of our
-                        clients, we bring forth a deep passion for
+                        An digital agency focused on digital <br/>
+                        experiences. With every single one of our <br/>
+                        clients, we bring forth a deep passion for <br/>
                         creative problem solving.
                     </h1>
                     <div ref={buttonRef} className="justify-left">
@@ -53,4 +53,5 @@ export default function Introduce() {
         </div>
     )
 }
+
 
