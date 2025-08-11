@@ -1,22 +1,35 @@
+"use client"
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import work2 from "../../../public/landing-photos/worker/secondary-work.png"
 import crop from "../../../public/works/crop-work.png"
+import { useRef } from "react";
+import { useSlideFromLeft, useSlideFromRight } from "@/lib/animations";
 
 export default function CenterWork() {
+    const fibeRef = useRef<HTMLDivElement>(null);
+    const fimageRef = useRef<HTMLDivElement>(null);
+    const secobeRef = useRef<HTMLDivElement>(null);
+    const seimageRef = useRef<HTMLDivElement>(null);
+
+    useSlideFromLeft(fimageRef, 0.3);
+    useSlideFromRight(fibeRef, 0.3);
+    useSlideFromLeft(secobeRef, 0.3);
+    useSlideFromRight(seimageRef, 0.3);
+
     return (
         <div className="max-w-full w-full px-20 py-20 bg-black">
             <div className="w-full flex flex-col lg:gap-[-64px] gap-16">
                 <div className="w-full justify-left items-left flex lg:flex-row flex-col-reverse gap-18">
-                    <div className="lg:w-[40%] w-full">
+                    <div ref={fimageRef} className="lg:w-[40%] w-full">
                         <Image
                             src={work2}
                             alt="second-work-features"
                         />
                     </div>
 
-                    <div className="justify-left items-left flex flex-col gap-6 bg-transparent">
+                    <div ref={fibeRef} className="justify-left items-left flex flex-col gap-6 bg-transparent">
                         <h5 className="text-2xl font-medium text-left text-white">/ CONTEXT AI</h5>
                         <h4 className="text-4xl font-medium text-left text-white">
                             Empowers developers <br />
@@ -34,7 +47,7 @@ export default function CenterWork() {
                 </div>
 
                 <div className="w-full justify-right items-right flex lg:flex-row flex-col gap-18 lg:pl-100">
-                    <div className="justify-left items-left flex flex-col gap-6 bg-transparent relative lg:top-25">
+                    <div ref={secobeRef} className="justify-left items-left flex flex-col gap-6 bg-transparent relative lg:top-25">
                         <h5 className="text-2xl font-medium text-left text-white">/ CLOODY</h5>
                         <h4 className="text-4xl font-medium text-left text-white">
                             Allowing users to <br />
@@ -52,7 +65,7 @@ export default function CenterWork() {
                         </div>
                     </div>
 
-                    <div className="lg:w-[44%] w-full">
+                    <div ref={seimageRef} className="lg:w-[44%] w-full">
                         <Image
                             src={crop}
                             alt="worker first photos"
