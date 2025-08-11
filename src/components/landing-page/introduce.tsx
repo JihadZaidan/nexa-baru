@@ -5,24 +5,16 @@ import Image from "next/image"
 import team from "../../../public/landing-photos/teams.png"
 import contribute from "../../../public/landing-photos/contributors.png"
 import { useRef } from "react"
-import { useSlideFromLeft, useFadeIn, useSlideFromTop } from "@/lib/animations"
+import { useSlideFromLeft, useFadeIn} from "@/lib/animations"
 
 export default function Introduce() {
     const headRef = useRef<HTMLHeadingElement>(null);
     const buttonRef = useRef<HTMLDivElement>(null);
     const bottomRef = useRef<HTMLDivElement>(null);
 
-    if (typeof window !== "undefined") {
-        if (window.innerWidth >= 1024) {
-            // Dekstop Version 
-            useSlideFromLeft(headRef, 0.3);
-            useSlideFromLeft(buttonRef, 0.3);
-            useFadeIn(bottomRef, 0.3);
-        } else {
-            // Application Version 
-            useSlideFromTop(headRef,0.3);
-        }
-    }
+    useSlideFromLeft(headRef, 0.3);
+    useSlideFromLeft(buttonRef, 0.3);
+    useFadeIn(bottomRef, 0.3);
 
     return (
         <div className="max-w-full w-full gap-16 px-20 pt-24 lg:pb-0 pb-10 bg-white">
