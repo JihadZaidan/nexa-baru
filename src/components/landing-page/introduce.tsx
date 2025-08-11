@@ -5,8 +5,7 @@ import Image from "next/image"
 import team from "../../../public/landing-photos/teams.png"
 import contribute from "../../../public/landing-photos/contributors.png"
 import { useRef } from "react"
-import { useSlideFromLeft, useFadeIn, useSlideFromTop} from "@/lib/animations"
-
+import { useSlideFromLeft, useFadeIn, useSlideFromTop } from "@/lib/animations"
 
 export default function Introduce() {
     const headRef = useRef<HTMLHeadingElement>(null);
@@ -24,15 +23,15 @@ export default function Introduce() {
             useSlideFromTop(headRef,0.3);
         }
     }
-    
+
     return (
         <div className="max-w-full w-full gap-16 px-20 pt-24 lg:pb-0 pb-10 bg-white">
             <div className="w-full flex flex-col justify-between items-left gap-20">
                 <div className="w-full flex flex-col justify-left items-left gap-16">
-                    <h1 ref={headRef} className="text-5xl leading-[130%] w-[75%] font-normal font-sans text-black">
-                        An digital agency focused on digital <br/>
-                        experiences. With every single one of our <br/>
-                        clients, we bring forth a deep passion for <br/>
+                    <h1 ref={headRef} className="text-5xl leading-[130%] w-[75%] font-normal font-sans text-black z-0">
+                        An digital agency focused on digital
+                        experiences. With every single one of our
+                        clients, we bring forth a deep passion for
                         creative problem solving.
                     </h1>
                     <div ref={buttonRef} className="justify-left">
@@ -62,7 +61,3 @@ export default function Introduce() {
         </div>
     )
 }
-
-
-
-
