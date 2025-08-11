@@ -5,7 +5,7 @@ import Image from "next/image"
 import team from "../../../public/landing-photos/teams.png"
 import contribute from "../../../public/landing-photos/contributors.png"
 import { useRef } from "react"
-import { useSlideFromLeft, useFadeIn} from "@/lib/animations"
+import { useSlideFromLeft, useFadeIn, useSlideFromTop} from "@/lib/animations"
 
 
 export default function Introduce() {
@@ -62,6 +62,7 @@ export default function Introduce() {
         </div>
     )
 }
+
 
 
 
