@@ -13,9 +13,18 @@ export default function Introduce() {
     const buttonRef = useRef<HTMLDivElement>(null);
     const bottomRef = useRef<HTMLDivElement>(null);
 
-    useSlideFromLeft(headRef, 0.3);
-    useSlideFromLeft(buttonRef, 0.3);
-    useFadeIn(bottomRef, 0.3);
+    if (typeof window !== "undefined") {
+        if (window.innerWidth >= 1024) {
+            // Dekstop Version 
+            useSlideFromLeft(headRef, 0.3);
+            useSlideFromLeft(buttonRef, 0.3);
+            useFadeIn(bottomRef, 0.3);
+        } else {
+            // Application Version 
+            useSlideFromTop(headRef,0.3);
+        }
+    }
+    
     return (
         <div className="max-w-full w-full gap-16 px-20 pt-24 lg:pb-0 pb-10 bg-white">
             <div className="w-full flex flex-col justify-between items-left gap-20">
@@ -53,5 +62,6 @@ export default function Introduce() {
         </div>
     )
 }
+
 
 
