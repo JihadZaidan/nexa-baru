@@ -1,14 +1,25 @@
+"use client"
 import { Button } from "../ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import work1 from "../../../public/landing-photos/worker/firsly-work.png"
+import { useRef } from "react"
+import { useSlideFromLeft, useSlideFromRight } from "@/lib/animations"
 
 export default function UpperWorks() {
+    const headerRef = useRef<HTMLHeadingElement>(null);
+    const describeRef = useRef<HTMLDivElement>(null);
+    const imageRef = useRef<HTMLDivElement>(null);
+    
+    useSlideFromLeft(headerRef, 0.3);
+    useSlideFromLeft(describeRef, 0.3);
+    useSlideFromRight(imageRef, 0.3);
+    
     return (
         <section>
             <div className="max-w-full w-full px-20 py-16 bg-white">
                 <div className="w-full flex flex-col gap-36 relative lg:top-10">
-                    <h1 className="text-5xl leading-[130%] w-[75%] font-normal font-sans text-black">
+                    <h1 ref={headerRef} className="text-5xl leading-[130%] w-[75%] font-normal font-sans text-black">
                         From creative projects that push <br />
                         the boundaries of our team&apos;s <br />
                         imagination. Build in into all of <br />
@@ -16,7 +27,7 @@ export default function UpperWorks() {
                     </h1>
 
                     <div className="w-full flex lg:flex-row flex-col lg:pl-[404px] lg:gap-24 gap-10">
-                        <div className="justify-left items-left flex flex-col gap-6 bg-transparent">
+                        <div ref={describeRef} className="justify-left items-left flex flex-col gap-6 bg-transparent">
                             <h5 className="text-2xl font-medium text-left text-black">/ HOUSEL</h5>
                             <h4 className="text-4xl font-medium text-left text-black">
                                 Help you to sell, buy, <br />
@@ -32,7 +43,7 @@ export default function UpperWorks() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[40%] w-full z-7 relative lg:top-15">
+                        <div ref={imageRef} className="lg:w-[40%] w-full z-7 relative lg:top-15">
                             <Image
                                 src={work1}
                                 alt="worker first photos"
