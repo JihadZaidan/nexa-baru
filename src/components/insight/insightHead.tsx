@@ -1,3 +1,4 @@
+"use client"
 import { useRef } from "react"
 import { useSlideFromLeft, useSlideFromRight } from "@/lib/animations"
 
@@ -26,3 +27,4 @@ export default function Insider() {
         </div>
     )
 }
+
