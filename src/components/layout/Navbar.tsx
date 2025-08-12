@@ -17,7 +17,7 @@ export default function Navbar() {
     useSlideFromTop(navRef, 0.35);
     
     return (
-        <header ref={navRef} className="w-full max-w-full mt-8 px-20 justify-center items-center">
+        <header ref={navRef} className="w-full max-w-full mt-8 mb-20 px-20 justify-center items-center">
             <nav className="w-full justify-between flex items-center">
                 <div>
                     <h4 className="text-4xl font-medium font-sans text-black">Nexa</h4>
@@ -42,7 +42,7 @@ export default function Navbar() {
 
                         {isMenuOpen && (
                             <nav
-                                className="absolute z-10 px-5 top-16 left-0 w-full bg-black shadow-lg flex flex-col items-center gap-8 py-8 px-8"
+                                className="absolute z-5 px-5 top-16 left-0 w-full bg-black shadow-lg flex flex-col items-center gap-8 py-8 px-8"
                             >
                                 {navigation
                                     .filter((item) => !item.hideInNavbar && item.published)
