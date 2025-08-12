@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "../ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
@@ -5,21 +6,33 @@ import DigitalStrategy from "../../../public/landing-photos/digital-strategy.png
 import Branding from "../../../public/landing-photos/branding.png"
 import Webdev from "../../../public/landing-photos/webdevelopers.png"
 import Appdev from "../../../public/landing-photos/appdeveloper.png"
+import { useRef } from "react"
+import { useSlideFromTop, useFadeIn, useZoom } from "@/lib/animations"
+
 
 
 export default function VisionBrand() {
+    const headRef = useRef<HTMLHeadingElement>(null);
+    const graphRef = useRef<HTMLDivElement>(null);
+    const upperRef = useRef<HTMLDivElement>(null);
+    const lowerRef = useRef<HTMLDivElement>(null);
+
+    useSlideFromTop(headRef, 0.3);
+    useFadeIn(graphRef, 0.3);
+    useZoom(upperRef, 0.3);
+    useZoom(lowerRef, 0.3);
     return (
         <div className="max-w-full w-full px-20 py-20 bg-black">
             <div className="w-full flex flex-col gap-20">
                 <div className="w-full justify-left items-left">
-                    <h2 className="lg:w-[53%] w-full text-left text-5xl font-medium font-sans text-white leading-[150%]">
+                    <h2 ref={headRef} className="lg:w-[53%] w-full text-left text-5xl font-medium font-sans text-white leading-[150%]">
                         Transforming Digital <br />
                         Innovations for Visionary Brands
                     </h2>
                 </div>
 
                 <div className="w-full flex flex-col gap-18 justify-left items-left">
-                    <div className="w-full flex lg:flex-row flex-col justify-between items-left pr-10 pb-10 gap-8 border-b-[0.25px] border-gray">
+                    <div ref={graphRef} className="w-full flex lg:flex-row flex-col justify-between items-left pr-10 pb-10 gap-8 border-b-[0.25px] border-gray">
                         <div className="w-full flex lg:flex-row flex-col justify-left lg:gap-20 gap-10 items-left">
                             <p className="lg:text-base text-xl font-normal text-white leading-[180%] text-left">
                                 Elevating Brands with <br />
@@ -39,7 +52,7 @@ export default function VisionBrand() {
                     </div>
 
                     <div className="w-full flex flex-col justify-left items-left gap-18">
-                        <div className="w-full flex lg:flex-row flex-col gap-7">
+                        <div ref={upperRef} className="w-full flex lg:flex-row flex-col gap-7">
                             <div className="w-full flex flex-col justify-left items-left gap-5">
                                 <h4 className="font-normal text-3xl text-white">01/ DIGITAL STRATEGY</h4>
                                 <Image
@@ -56,7 +69,7 @@ export default function VisionBrand() {
                             </div>
                         </div>
 
-                        <div className="w-full flex lg:flex-row flex-col gap-7">
+                        <div ref={lowerRef} className="w-full flex lg:flex-row flex-col gap-7">
                             <div className="w-full flex flex-col justify-left items-left gap-5">
                                 <h4 className="font-normal text-3xl text-white">03/ WEB DEVELOPMENT</h4>
                                 <Image
@@ -78,3 +91,4 @@ export default function VisionBrand() {
         </div>
     )
 } 
+

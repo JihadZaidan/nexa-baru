@@ -1,28 +1,39 @@
+"use client"
 import { ArrowRight } from "lucide-react"
 import { Button } from "../ui/button"
 import Image from "next/image"
 import team from "../../../public/landing-photos/teams.png"
 import contribute from "../../../public/landing-photos/contributors.png"
+import { useRef } from "react"
+import { useSlideFromLeft, useFadeIn} from "@/lib/animations"
 
 export default function Introduce() {
+    const headRef = useRef<HTMLHeadingElement>(null);
+    const buttonRef = useRef<HTMLDivElement>(null);
+    const bottomRef = useRef<HTMLDivElement>(null);
+
+    useSlideFromLeft(headRef, 0.3);
+    useSlideFromLeft(buttonRef, 0.3);
+    useFadeIn(bottomRef, 0.3);
+
     return (
         <div className="max-w-full w-full gap-16 px-20 pt-24 lg:pb-0 pb-10 bg-white">
             <div className="w-full flex flex-col justify-between items-left gap-20">
                 <div className="w-full flex flex-col justify-left items-left gap-16">
-                    <h1 className="text-5xl leading-[130%] w-[75%] font-normal font-sans text-black">
-                        An digital agency focused on digital
-                        experiences. With every single one of our
-                        clients, we bring forth a deep passion for
+                    <h1 ref={headRef} className="text-5xl leading-[130%] w-[75%] font-normal font-sans text-black z-0">
+                        An digital agency focused on digital <br/> 
+                        experiences. With every single one of our <br/>
+                        clients, we bring forth a deep passion for <br/>
                         creative problem solving.
                     </h1>
-                    <div className="justify-left">
+                    <div ref={buttonRef} className="justify-left">
                         <Button className="justify-center gap-[9px] ml-[-10px] border-b-2 border-black">
                             <p className="text-black text-2xl font-medium">Let&apos;s talk</p>
                             <ArrowRight height={22} width={22} className="mt-[2px] text-black" />
                         </Button>
                     </div>
                 </div>
-                <div className="w-full lg:flex lg:flex-row lg:justify-between lg:gap-4 flex flex-col justify between gap-10">
+                <div ref={bottomRef} className="w-full lg:flex lg:flex-row lg:justify-between lg:gap-4 flex flex-col justify between gap-10">
                     <div className="lg:w-[40%] w-[80%] flex flex-row gap-12 lg:justify-left justify-center items-center">
                         <Image
                             src={team}
@@ -42,3 +53,4 @@ export default function Introduce() {
         </div>
     )
 }
+

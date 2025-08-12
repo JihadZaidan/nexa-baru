@@ -9,7 +9,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        trans: "bg-transparent flex flex-row cursor-pointer"
+        trans: "bg-transparent flex flex-row cursor-pointer",
+        outline: "bg-transparent flex flex-row cursor-pointer"
       },
       size: {
         default: "h-9 px-5 py-5",
@@ -46,3 +47,4 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = "Button";
 
 export { Button, buttonVariants };
+
