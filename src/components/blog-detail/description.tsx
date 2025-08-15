@@ -8,12 +8,12 @@ export default function DescribeDetail() {
         <div className="max-w-full w-full px-20 py-15">
             <div className="w-full gap-15 flex flex-col">
                 <p className="text-[#595E5E] text-2xl leading-[150%] font-sans font-medium">
-                    In todays rapidly evolving business landscape, brands face <br />
+                    In todays rapidly evolving business landscape brands face <br />
                     the constant challenge of staying relevant in the face of <br />
-                    changing market dynamics. Brand evolution, the process of <br />
+                    changing market dynamics. Brand evolution the process of <br />
                     adapting and transforming to meet shifting consumer needs <br />
-                    and market trends, has become essential for businesses <br />
-                    seeking long-term success. By embracing brand evolution, <br />
+                    and market trends has become essential for businesses <br />
+                    seeking long-term success. By embracing brand evolution <br />
                     companies can not only maintain their competitive edge but <br />
                     also foster growth and resilience in the face of uncertainty.
                 </p>
@@ -37,9 +37,9 @@ export default function DescribeDetail() {
                     <p className="text-[#595E5E] text-2xl leading-[150%] font-sans font-medium">
                         This blog post explores the intricacies of brand evolution and its significance in <br />
                         modern business strategy. From identifying emerging market trends to implementing <br />
-                        effective adaptation strategies, businesses can navigate the complexities of brand <br />
-                        evolution with confidence. Through insightful case studies, actionable strategies, <br />
-                        and a focus on authenticity, this post aims to equip brands with the knowledge and <br />
+                        effective adaptation strategies businesses can navigate the complexities of brand <br />
+                        evolution with confidence. Through insightful case studies actionable strategies <br />
+                        and a focus on authenticity this post aims to equip brands with the knowledge and <br />
                         tools they need to thrive in today's ever-changing marketplace.
                     </p>
                 </div>
