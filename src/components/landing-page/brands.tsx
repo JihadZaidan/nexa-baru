@@ -9,8 +9,6 @@ import Appdev from "../../../public/landing-photos/appdeveloper.png"
 import { useRef } from "react"
 import { useSlideFromTop, useFadeIn, useZoom } from "@/lib/animations"
 
-
-
 export default function VisionBrand() {
     const headRef = useRef<HTMLHeadingElement>(null);
     const graphRef = useRef<HTMLDivElement>(null);
@@ -21,12 +19,13 @@ export default function VisionBrand() {
     useFadeIn(graphRef, 0.3);
     useZoom(upperRef, 0.3);
     useZoom(lowerRef, 0.3);
+    
     return (
-        <div className="max-w-full w-full px-20 py-20 bg-black">
-            <div className="w-full flex flex-col gap-20">
+        <div className="max-w-full w-full lg:px-20 lg:py-20 px-8 py-8 bg-black">
+            <div className="w-full flex flex-col lg:gap-20 gap-10">
                 <div className="w-full justify-left items-left">
-                    <h2 ref={headRef} className="lg:w-[53%] w-full text-left text-5xl font-medium font-sans text-white leading-[150%]">
-                        Transforming Digital <br />
+                    <h2 ref={headRef} className="lg:w-[40%] w-full text-left lg:text-5xl text-3xl font-medium font-sans text-white leading-[150%]">
+                        Transforming Digital 
                         Innovations for Visionary Brands
                     </h2>
                 </div>
@@ -44,7 +43,7 @@ export default function VisionBrand() {
                         </div>
 
                         <div>
-                            <Button className="justify-left gap-[9px] ml-[-20px] border-b-2 border-black">
+                            <Button className="justify-left gap-[9px] ml-[-10px] border-b-2 border-black">
                                 <p className="text-white text-lg font-medium">Explore All Expertise</p>
                                 <ArrowRight height={22} width={22} className="mt-[2px] text-white" />
                             </Button>
@@ -54,34 +53,38 @@ export default function VisionBrand() {
                     <div className="w-full flex flex-col justify-left items-left gap-18">
                         <div ref={upperRef} className="w-full flex lg:flex-row flex-col gap-7">
                             <div className="w-full flex flex-col justify-left items-left gap-5">
-                                <h4 className="font-normal text-3xl text-white">01/ DIGITAL STRATEGY</h4>
+                                <h4 className="font-normal text-2xl text-white">01/ DIGITAL STRATEGY</h4>
                                 <Image
                                     src={DigitalStrategy}
                                     alt="digital strategy"
+                                    className="h-[500px] w-full"
                                 />
                             </div>
                             <div className="w-full flex flex-col justify-left items-left gap-5">
-                                <h4 className="font-normal text-3xl text-white">02/ BRANDING</h4>
+                                <h4 className="font-normal text-2xl text-white">02/ BRANDING</h4>
                                 <Image
                                     src={Branding}
                                     alt="Branding"
+                                    className="h-[500px] w-full"
                                 />
                             </div>
                         </div>
 
                         <div ref={lowerRef} className="w-full flex lg:flex-row flex-col gap-7">
                             <div className="w-full flex flex-col justify-left items-left gap-5">
-                                <h4 className="font-normal text-3xl text-white">03/ WEB DEVELOPMENT</h4>
+                                <h4 className="font-normal text-2xl text-white">03/ WEB DEVELOPMENT</h4>
                                 <Image
                                     src={Webdev}
                                     alt="WebDev"
+                                    className="h-[500px] w-full"
                                 />
                             </div>
                             <div className="w-full flex flex-col justify-left items-left gap-5">
-                                <h4 className="font-normal text-3xl text-white">04/ APP DEVELOPMENT</h4>
+                                <h4 className="font-normal text-2xl text-white">04/ APP DEVELOPMENT</h4>
                                 <Image
                                     src={Appdev}
                                     alt="MobileDev"
+                                    className="h-[500px] w-full"
                                 />
                             </div>
                         </div>
@@ -91,4 +94,3 @@ export default function VisionBrand() {
         </div>
     )
 } 
-
