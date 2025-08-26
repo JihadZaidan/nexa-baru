@@ -17,30 +17,30 @@ export default function Introduce() {
     useFadeIn(bottomRef, 0.3);
 
     return (
-        <div className="max-w-full w-full gap-16 px-20 pt-24 lg:pb-0 pb-10 bg-white">
+        <div className="max-w-full w-full gap-16 lg:px-20 lg:pt-24 px-8 lg:pb-0 pb-10 bg-white">
             <div className="w-full flex flex-col justify-between items-left gap-20">
-                <div className="w-full flex flex-col justify-left items-left gap-16">
-                    <h1 ref={headRef} className="text-5xl leading-[130%] w-[75%] font-normal font-sans text-black z-0">
-                        An digital agency focused on digital <br/> 
-                        experiences. With every single one of our <br/>
-                        clients, we bring forth a deep passion for <br/>
+                <div className="w-full flex flex-col justify-left items-left lg:gap-16 gap-8">
+                    <h1 ref={headRef} className="lg:text-5xl text-3xl leading-[130%] lg:w-[70%] w-full font-normal font-sans text-black">
+                        An digital agency focused on digital
+                        experiences. With every single one of our
+                        clients, we bring forth a deep passion for
                         creative problem solving.
                     </h1>
                     <div ref={buttonRef} className="justify-left">
                         <Button className="justify-center gap-[9px] ml-[-10px] border-b-2 border-black">
-                            <p className="text-black text-2xl font-medium">Let&apos;s talk</p>
+                            <p className="text-black text-xl lg:text-3xl font-medium">Let&apos;s talk</p>
                             <ArrowRight height={22} width={22} className="mt-[2px] text-black" />
                         </Button>
                     </div>
                 </div>
                 <div ref={bottomRef} className="w-full lg:flex lg:flex-row lg:justify-between lg:gap-4 flex flex-col justify between gap-10">
-                    <div className="lg:w-[40%] w-[80%] flex flex-row gap-12 lg:justify-left justify-center items-center">
+                    <div className="lg:w-full w-[80%] flex lg:flex-row flex-col lg:gap-12 gap-8 lg:justify-left justify-center items-center">
                         <Image
                             src={team}
                             alt="photos"
-                            className="lg:ml-0 ml-15"
+                            className="ml-0"
                         />
-                        <p className="lg:text-xl text-lg font-medium text-black leading-[120%]">You&apos;ll collaborate with our experts.</p>
+                        <p className="lg:text-2xl text-base font-medium text-black leading-[140%]">You&apos;ll collaborate with our experts.</p>
                     </div>
 
                     <Image
@@ -53,4 +53,3 @@ export default function Introduce() {
         </div>
     )
 }
-
