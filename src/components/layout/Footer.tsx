@@ -12,9 +12,9 @@ export default function Footer() {
     useZoom(bottom, 0.5);
 
     return (
-        <div className="max-w-full w-full lg:px-20 lg:py-20 px-10 pt-14 pb-8 flex flex-col gap-30 bg-black">
+        <div className="max-w-full w-full lg:px-20 lg:py-20 px-4 pt-14 pb-3 flex flex-col gap-30 bg-black">
             <div className="w-full gap-18 flex lg:flex-row flex-col px-5">
-                <h1 ref={headRef} className="lg:w-[70%] leading-[130%] lg:text-7xl text-5xl text-white lg:text-left  font-sans font-normal">
+                <h1 ref={headRef} className="lg:w-[70%] leading-[140%] lg:text-7xl text-4xl text-white lg:text-left  font-sans font-normal">
                     Let&apos;s Make Something Cool
                 </h1>
                 <ul className="w-full flex flex-col gap-7 justify-right items-right">
