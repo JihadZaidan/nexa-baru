@@ -19,23 +19,23 @@ export default function Story() {
     useZoom(twoRef, 0.3);
 
     return (
-        <div className="max-w-full w-full bg-[#F2F2F2] px-20 py-30">
-            <div className="w-full flex flex-col justify-left items-left gap-30">
-                <div className="w-full flex lg:flex-row flex-col lg:justify-between justify-left items-left gap-10">
-                    <h3 ref={headRef} className="lg:w-[48%] w-full text-left text-5xl font-medium font-sans text-black leading-[150%]">
-                        Latest insights, stories, <br />
+        <div className="max-w-full w-full bg-[#F2F2F2] lg:px-20 lg:py-30 px-8 py-8">
+            <div className="w-full flex flex-col justify-left items-left lg:gap-30 gap-20">
+                <div className="w-full flex lg:flex-row flex-col lg:justify-between justify-left items-left gap-8">
+                    <h3 ref={headRef} className="lg:w-[40%] w-full text-left lg:text-5xl text-3xl font-medium font-sans text-black leading-[140%]">
+                        Latest insights, stories,
                         and news from Nexa.
                     </h3>
 
                     <div ref={buttonRef} className="relative lg:mt-25">
-                        <Button className="flex flex-row justify-center gap-3 ml-[-20px]">
-                            <p className="text-black lg:text-lg text-2xl font-medium">Explore the Insight</p>
+                        <Button className="flex flex-row justify-center gap-3 ml-[-10px]">
+                            <p className="text-black text-lg font-medium">Explore the Insight</p>
                             <ArrowRight height={22} width={22} className="mt-[2px] text-black lg:h-[22px] lg:w-[22px] h-[25px] w-[25px]" />
                         </Button>
                     </div>
                 </div>
 
-                <div className="w-full flex lg:flex-row flex-col lg:gap-20 gap-10 justify-left items-left">
+                <div className="w-full flex lg:flex-row flex-col lg:gap-20 gap-12 justify-left items-left">
                     <div ref={oneRef} className="w-full flex flex-col justify-left gap-10 items-left">
                         <Image
                             src={invidi}
@@ -43,7 +43,7 @@ export default function Story() {
                             className="grayscale"
                         />
                         <div className="lg:w-[75%] w-full flex flex-col gap-6">
-                            <h4 className="w-full text-medium text-black text-4xl leading-[140%]">
+                            <h4 className="w-full text-medium text-black lg:text-4xl text-2xl leading-[140%]">
                                 All about the Business <br />
                                 Model Canvas
                             </h4>
@@ -54,13 +54,13 @@ export default function Story() {
                         </div>
                     </div>
 
-                    <div ref={twoRef} className="w-full flex flex-col justify-left gap-10 items-left pt-40">
+                    <div ref={twoRef} className="w-full flex flex-col justify-left gap-10 items-left">
                         <Image
                             src={invida}
                             alt="insight secondary"
                         />
                         <div className="lg:w-[75%] w-full flex flex-col gap-6">
-                            <h4 className="w-full text-medium text-black text-4xl leading-[140%]">
+                            <h4 className="w-full text-medium text-black lg:text-4xl text-2xl leading-[140%]">
                                 UI + UX: Two Different but <br />
                                 Complimenting Practices
                             </h4>
