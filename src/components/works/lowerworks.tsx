@@ -15,7 +15,7 @@ export default function LowerSection() {
     useSlideFromLeft(imageRef, 0.3);
 
     return (
-        <div className="max-w-full w-full px-20 pt-12 pb-25 bg-white">
+        <div className="max-w-full w-full lg:px-20 lg:pt-12 lg:pb-25 px-5 py-8 bg-white">
             <div className="w-full flex lg:flex-row flex-col-reverse lg:gap-20 gap-12">
                 <div ref={imageRef} className="lg:w-[55%] w-full">
                     <Image
@@ -26,15 +26,15 @@ export default function LowerSection() {
 
                 <div ref={describeRef} className="justify-left items-left flex flex-col gap-6 bg-transparent">
                     <h5 className="text-2xl font-medium text-left text-black">/ DOCKER</h5>
-                    <h4 className="text-4xl font-medium text-left text-black">
+                    <h4 className="lg:text-4xl text-2xl font-medium text-left text-black">
                         Enhanching digital <br />
                         marketing with <br />
                         innovative design <br />
                         solutions <br />
                     </h4>
                     <div>
-                        <Button className="justify-left gap-[9px] ml-[-20px]">
-                            <p className="text-black text-xl font-medium text-left">View case study</p>
+                        <Button className="justify-left gap-[9px] ml-[-10px]">
+                            <p className="text-black lg:text-xl text-base font-medium text-left">View case study</p>
                             <ArrowRight height={23} width={23} className="mt-[2px] text-black" />
                         </Button>
                     </div>
