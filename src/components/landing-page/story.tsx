@@ -54,7 +54,7 @@ export default function Story() {
                         </div>
                     </div>
 
-                    <div ref={twoRef} className="w-full flex flex-col justify-left gap-10 items-left">
+                    <div ref={twoRef} className="w-full flex flex-col justify-left gap-10 items-left lg:pt-20">
                         <Image
                             src={invida}
                             alt="insight secondary"
@@ -75,3 +75,4 @@ export default function Story() {
         </div>
     )
 }
+
