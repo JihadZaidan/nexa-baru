@@ -17,7 +17,7 @@ export default function Navbar() {
     useSlideFromTop(navRef, 0.35);
     
     return (
-        <header ref={navRef} className="w-full max-w-full mt-8 mb-20 px-8 justify-center items-center">
+        <header ref={navRef} className="w-full max-w-full mt-8 mb-20 lg:px-20 px-8 justify-center items-center">
             <nav className="w-full justify-between flex flex-row">
                 <div>
                     <h4 className="text-4xl font-medium font-sans text-black">Nexa</h4>
