@@ -17,7 +17,7 @@ export default function UpperWorks() {
     return (
         <section>
             <div className="max-w-full w-full lg:px-20 lg:py-16 px-8 py-8 bg-white">
-                <div className="w-full flex flex-col gap-36 relative lg:top-10">
+                <div className="w-full flex flex-col lg:gap-30 gap-18 relative lg:top-10">
                     <h1 ref={headerRef} className="lg:text-5xl text-2xl leading-[130%] lg:w-[60%] font-normal font-sans text-black">
                         From creative projects that push 
                         the boundaries of our team&apos;s 
