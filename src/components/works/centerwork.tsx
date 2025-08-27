@@ -31,11 +31,11 @@ export default function CenterWork() {
 
                     <div ref={fibeRef} className="justify-left items-left flex flex-col gap-6 bg-transparent">
                         <h5 className="text-2xl font-medium text-left text-white">/ CONTEXT AI</h5>
-                        <h4 className="lg:text-4xl text-xl font-medium text-left text-white">
-                            Empowers developers <br />
-                            and companies to <br />
-                            build outstanding <br />
-                            products.<br />
+                        <h4 className="lg:text-4xl text-2xl font-medium text-left text-white">
+                            Empowers developers 
+                            and companies to 
+                            build outstanding 
+                            products.
                         </h4>
                         <div>
                             <Button className="justify-left gap-[9px] ml-[-10px]">
@@ -50,12 +50,12 @@ export default function CenterWork() {
                     <div ref={secobeRef} className="justify-left items-left flex flex-col gap-6 bg-transparent relative lg:top-25">
                         <h5 className="text-2xl font-medium text-left text-white">/ CLOODY</h5>
                         <h4 className="lg:text-4xl text-xl font-medium text-left text-white">
-                            Allowing users to <br />
-                            upload and sync files <br />
-                            to cloud storage and <br />
-                            then access <br />
-                            them via Web Browser <br />
-                            or specific devices. <br />
+                            Allowing users to 
+                            upload and sync files 
+                            to cloud storage and 
+                            then access 
+                            them via Web Browser 
+                            or specific devices. 
                         </h4>
                         <div>
                             <Button className="justify-left gap-[9px] ml-[-10px]">
@@ -76,4 +76,3 @@ export default function CenterWork() {
         </div>
     )
 }
-
