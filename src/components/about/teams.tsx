@@ -10,18 +10,18 @@ export default function Teams() {
             <Image
                 src={Antony}
                 alt="team-antony"
-                className="absolute grayscale scale-20 lg:scale-25 lg:right-[-200px] lg:bottom-[-350px] right-[-280px] bottom-[-250px]"
+                className="absolute grayscale scale-30 lg:scale-25 lg:right-[-200px] lg:bottom-[-350px] right-[120px] bottom-[-140px]"
             />
 
             <Image
                 src={Luna}
                 alt="team-luna"
-                className="absolute grayscale scale-20 lg:scale-30 lg:right-[150px] lg:bottom-[230px] right-[-200px] bottom-[110px]"
+                className="absolute grayscale scale-35 lg:scale-40 lg:right-[150px] lg:bottom-[230px] right-[100px] bottom-[180px]"
             />
 
-            <div className="z-5 w-full px-30 py-30 relative justify-center items-center">
+            <div className="z-5 w-full px-25 pt-30 pb-40 relative justify-center items-center">
                 <div className="justify-center items-center">
-                    <h2 className="w-full text-black text-center text-4xl lg:text-5xl font-sans font-medium leading-[130%]">
+                    <h2 className="w-full text-black text-center text-xl lg:text-5xl font-sans font-medium leading-[130%]">
                         Meet Our Troops of Creative
                     </h2>
                 </div>
@@ -30,13 +30,13 @@ export default function Teams() {
             <Image
                 src={Sakhir}
                 alt="team-sakhir"
-                className="absolute grayscale scale-20 lg:scale-35 lg:left-[-150px] lg:bottom-[-150px] left-[-230px] bottom-[-150px]"
+                className="absolute grayscale scale-30 lg:scale-35 lg:left-[-150px] lg:bottom-[-150px] left-[123px] bottom-[-80px]"
             />
 
             <Image
                 src={Wayne}
                 alt="team-wayne"
-                className="absolute grayscale scale-20 lg:scale-28 lg:left-[-250px] lg:bottom-[150px] left-[-230px] bottom-[80px]"
+                className="absolute grayscale scale-30 lg:scale-28 lg:left-[-250px] lg:bottom-[150px] left-[120px] bottom-[150px]"
             />
         </section>
 
