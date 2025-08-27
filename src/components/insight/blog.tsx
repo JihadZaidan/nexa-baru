@@ -64,7 +64,7 @@ export default function InsightSection() {
             href={`/blog-detail`}
             className="flex flex-col gap-3"
           >
-            <div className="relative w-full h-[200px]">
+            <div className="relative w-full h-[300px]">
               <Image
                 src={item.image.replace("public/", "/")}
                 alt={item.title}
