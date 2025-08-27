@@ -49,7 +49,7 @@ export default function CenterWork() {
                 <div className="w-full justify-right items-right flex lg:flex-row flex-col gap-12 lg:pl-90">
                     <div ref={secobeRef} className="justify-left items-left flex flex-col gap-6 bg-transparent relative lg:top-25">
                         <h5 className="text-2xl font-medium text-left text-white">/ CLOODY</h5>
-                        <h4 className="lg:text-4xl text-xl font-medium text-left text-white">
+                        <h4 className="lg:text-4xl text-2xl font-medium text-left text-white">
                             Allowing users to 
                             upload and sync files 
                             to cloud storage and 
@@ -76,3 +76,4 @@ export default function CenterWork() {
         </div>
     )
 }
+
