@@ -15,9 +15,9 @@ export default function LowerSection() {
     useSlideFromLeft(imageRef, 0.3);
 
     return (
-        <div className="max-w-full w-full lg:px-20 lg:pt-12 lg:pb-25 px-5 py-8 bg-white">
+        <div className="max-w-full w-full lg:px-18 lg:pt-12 lg:pb-25 px-5 py-8 bg-white">
             <div className="w-full flex lg:flex-row flex-col-reverse lg:gap-20 gap-12">
-                <div ref={imageRef} className="lg:w-[55%] w-full">
+                <div ref={imageRef} className="lg:w-[70%] w-full">
                     <Image
                         src={ProDocker}
                         alt="Docker Project"
@@ -26,7 +26,7 @@ export default function LowerSection() {
 
                 <div ref={describeRef} className="justify-left items-left flex flex-col gap-6 bg-transparent">
                     <h5 className="text-2xl font-medium text-left text-black">/ DOCKER</h5>
-                    <h4 className="lg:text-4xl text-2xl font-medium text-left text-black">
+                    <h4 className="lg:text-3xl text-2xl font-medium text-left text-black">
                         Enhanching digital <br />
                         marketing with <br />
                         innovative design <br />
