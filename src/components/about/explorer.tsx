@@ -22,13 +22,13 @@ export default function AboutExplor() {
         <div className="max-w-full w-full bg-black px-20 py-20">
             <div className="w-full flex flex-col gap-14">
                 <div className="w-full flex flex-col gap-10">
-                    <h2 ref={headeRef} className="font-sans font-medium text-left lext-white text-5xl leading-[150%]">
+                    <h2 ref={headeRef} className="font-sans font-medium text-left lext-white lg:text-4xl text-xl leading-[150%]">
                         Shaping Tomorrow&apos;s Digital Realms. <br />
                         One Pixel at a Time
                     </h2>
 
-                    <div className="w-full flex flex-col lg:pl-170 lg:gap-10 gap-5">
-                        <p ref={describeRef} className="text-white font-normal font-sans text-lg leading-[170%]">
+                    <div className="w-full flex flex-col lg:pl-130 lg:gap-10 gap-5">
+                        <p ref={describeRef} className="text-white font-normal font-sans lg:text-2xl text-base leading-[170%]">
                             Here, we transform your digital dreams into reality <br />
                             — pushing boundaries and setting new standards in the digital landscape.
                         </p>
@@ -46,7 +46,7 @@ export default function AboutExplor() {
                     <Image
                         src={Discusion}
                         alt="discusion teams"
-                        className="grayscale"
+                        className="lg:aspect-[16/9] grayscale"
                     />
                 </div>
 
