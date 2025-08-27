@@ -19,7 +19,7 @@ export default function AboutExplor() {
     useFadeIn(imageRef, 0.3);
 
     return (
-        <div className="max-w-full w-full bg-black px-20 py-20">
+        <div className="max-w-full w-full bg-black lg:px-20 lg:py-20 px-8 py-8">
             <div className="w-full flex flex-col gap-14">
                 <div className="w-full flex flex-col gap-10">
                     <h2 ref={headeRef} className="font-sans font-medium text-left lext-white lg:text-4xl text-xl leading-[150%]">
@@ -46,7 +46,7 @@ export default function AboutExplor() {
                     <Image
                         src={Discusion}
                         alt="discusion teams"
-                        className="lg:aspect-[16/9] grayscale"
+                        className="lg:aspect-[16/9] aspect-[5/3] grayscale scale-[100%]"
                     />
                 </div>
 
