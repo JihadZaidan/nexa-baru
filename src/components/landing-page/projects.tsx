@@ -70,7 +70,7 @@ export default function Worksheet() {
                         </div>
                     </div>
 
-                    <div className="w-full justify-right items-right lg:ml-105 flex lg:flex-row flex-col gap-18">
+                    <div className="w-full justify-right items-right lg:ml-75 flex lg:flex-row flex-col gap-18">
                         <div ref={secondRef} className="justify-left items-left flex flex-col gap-6 bg-transparent">
                             <h5 className="text-2xl font-medium text-left text-black">/ CONTEXT AI</h5>
                             <h4 className="lg:text-4xl text-2xl font-medium text-left text-black">
@@ -95,7 +95,7 @@ export default function Worksheet() {
                         </div>
                     </div>
 
-                    <div className="w-full justify-left items-left flex lg:ml-[-220px] lg:flex-row-reverse flex-col-reverse gap-18">
+                    <div className="w-full justify-left items-left flex lg:ml-[-150px] lg:flex-row-reverse flex-col-reverse gap-18">
                         <div ref={thirdRef} className="justify-left items-left flex flex-col gap-6 bg-transparent">
                             <h5 className="text-2xl font-medium text-left text-black">/ CLOODY</h5>
                             <h4 className="lg:text-4xl text-2xl font-medium text-left text-black">
