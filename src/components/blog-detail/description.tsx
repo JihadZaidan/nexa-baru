@@ -7,7 +7,7 @@ export default function DescribeDetail() {
     return (
         <div className="max-w-full w-full lg:px-20 lg:py-15 px-10 py-10">
             <div className="w-full gap-15 flex flex-col">
-                <p className="text-[#595E5E] lg:text-3xl lg:pl-20 leading-[150%] font-sans font-medium">
+                <p className="lg:w-[75%] text-[#595E5E] lg:text-3xl leading-[150%] font-sans font-medium">
                     In todays rapidly evolving business landscape brands face 
                     the constant challenge of staying relevant in the face of 
                     changing market dynamics. Brand evolution the process of 
