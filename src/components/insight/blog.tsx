@@ -47,7 +47,7 @@ export default function InsightSection() {
           <div className="pt-4">
             <Button
               variant="outline"
-              className="text-xl font-medium font-sans text-black"
+              className="text-xl font-medium font-sans text-black px-25"
               onClick={() => setShowAll(true)}
             >
               See more →
@@ -80,4 +80,5 @@ export default function InsightSection() {
     </section>
   );
 }
+
 
