@@ -15,9 +15,9 @@ export default function DetailUpper() {
     useSlideFromRight(imageRef, 0.3);
 
     return (
-        <div className="max-w-full w-full px-20 py-30 flex flex-col gap-20">
+        <div className="max-w-full w-full lg:px-20 lg:py-30 px-8 py-5 flex flex-col lg:gap-20 gap-10">
             <div className="w-full flex flex-col gap-20">
-                <h1 ref={headRef} className="font-sans font-medium text-5xl text-black leading-[150%] z-5">
+                <h1 ref={headRef} className="font-sans font-medium lg:text-5xl text-3xl text-black leading-[150%] lg:z-5">
                     Brand Evolution — <br />
                     Adapting to Changing Markets
                 </h1>
